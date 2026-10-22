@@ -1,0 +1,98 @@
+/* Breakpoints: 768, 992, 1200, 1440. Base styles are mobile-first. */
+
+@media (max-width: 480px) {
+  .lx-logo strong { font-size: 1rem; }
+  .lx-logo small { font-size: 0.55rem; letter-spacing: 0.08em; }
+  .lx-icon-btn { width: 38px; height: 38px; }
+}
+
+@media (max-width: 380px) {
+  .lx-grid { grid-template-columns: 1fr; }
+  .lx-card-atc { font-size: 0.82rem; padding-inline: 0.6rem; }
+  .lx-announce { font-size: 0.7rem; padding-inline: 2rem; }
+}
+
+@media (min-width: 768px) {
+  .lx-section { padding: 4.5rem 0; }
+  .lx-cat-grid { grid-template-columns: 1fr 1fr; }
+  .lx-cat-card { min-height: 360px; }
+  .lx-why { grid-template-columns: 1fr 1fr; }
+  .lx-insta-grid { grid-template-columns: repeat(3, 1fr); }
+  .lx-scroller { grid-auto-columns: calc((100% - 0.8rem) / 2); }
+  .lx-trust { grid-template-columns: repeat(3, 1fr); }
+  .lx-promo { grid-template-columns: 1.4fr 1fr; align-items: center; padding: 2.2rem; }
+  .lx-news-form { flex-direction: row; }
+  .lx-news-form .btn { white-space: nowrap; }
+  .lx-newsletter-banner { padding: 2.2rem 2rem; display: grid; grid-template-columns: 1.2fr 1fr; gap: 1rem; align-items: center; }
+  .lx-values { grid-template-columns: 1fr 1fr; }
+  .lx-cart-row { grid-template-columns: 110px 1fr auto; align-items: center; }
+  .lx-split { grid-template-columns: 1.05fr 0.95fr; gap: 2rem; }
+  .lx-footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 1.5rem; }
+  .qv-grid { grid-template-columns: 0.9fr 1.1fr; }
+  .lx-hero-copy { padding-bottom: 6rem; }
+}
+
+@media (min-width: 992px) {
+  .lx-burger { display: none; }
+  .lx-nav-desktop { display: flex; }
+  .lx-search { display: block; }
+  .lx-logo { margin-right: 0.5rem; }
+  .lx-logo strong { font-size: 1.35rem; letter-spacing: 0.04em; }
+  .lx-actions { margin-left: auto; }
+  .lx-mega-wrap:hover > .lx-mega,
+  .lx-mega-wrap:focus-within > .lx-mega { display: block; }
+  .lx-mega-grid { grid-template-columns: repeat(6, 1fr); }
+  .lx-mega-card { grid-template-columns: 1fr; }
+  .lx-mega-card img { width: 100%; height: 92px; }
+  .lx-catalog { grid-template-columns: 260px minmax(0, 1fr); align-items: start; }
+  .lx-filter-panel {
+    position: sticky;
+    top: calc(var(--topbar-h) + 12px);
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .lx-filter-panel .offcanvas-body {
+    display: block;
+    overflow: visible;
+    padding: 0;
+  }
+  .lx-product { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 2rem; align-items: start; }
+  .lx-product-info { position: sticky; top: calc(var(--topbar-h) + 16px); }
+  .lx-cart-layout, .lx-check-layout { grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.7fr); align-items: start; }
+  .lx-summary.is-sticky, .lx-check-summary { position: sticky; top: calc(var(--topbar-h) + 16px); }
+  .lx-scroller { grid-auto-columns: calc((100% - 2.4rem) / 4); }
+  .lx-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .lx-sticky-atc { display: none !important; }
+  body[data-page="product"] .lx-wa,
+  body[data-page="product"] .lx-top { bottom: 1rem; }
+  body[data-page="product"] .lx-top { bottom: 5rem; }
+  .lx-card-actions .lx-quick,
+  .lx-card-actions .lx-icon-btn { opacity: 0; }
+  .lx-card:hover .lx-card-actions .lx-quick,
+  .lx-card:focus-within .lx-card-actions .lx-quick,
+  .lx-card:hover .lx-card-actions .lx-icon-btn,
+  .lx-card:focus-within .lx-card-actions .lx-icon-btn { opacity: 1; }
+  .lx-footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1.2fr; }
+  .lx-look img { height: 640px; }
+}
+
+@media (min-width: 1200px) {
+  .lx-hero h1, .lx-hero-title { font-size: 5.5rem; }
+  .lx-cat-grid { grid-template-columns: repeat(3, 1fr); }
+  .lx-cat-card { min-height: 420px; }
+  .lx-why { grid-template-columns: repeat(4, 1fr); }
+  .container-xl { max-width: 1200px; }
+}
+
+@media (min-width: 1440px) {
+  .container-xl { max-width: 1360px; }
+  .lx-grid { gap: 1.15rem; }
+  .lx-hero-copy { max-width: 46rem; }
+}
+
+@media (hover: none) {
+  .lx-card-actions .lx-quick,
+  .lx-card-actions .lx-icon-btn { opacity: 1; }
+  .lx-hotspot-card { opacity: 1; position: static; display: none; }
+}

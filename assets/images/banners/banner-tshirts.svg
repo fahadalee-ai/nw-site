@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="700" viewBox="0 0 1920 700" role="img" aria-label="T-Shirts">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2A2A2E"/>
+      <stop offset="100%" stop-color="#4A453E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="700" fill="url(#g)"/>
+  <circle cx="1498" cy="196" r="126" fill="#E6D3B1" opacity="0.45"/>
+  <circle cx="422" cy="504" r="70" fill="none" stroke="#B8935A" stroke-width="2"/>
+  <rect x="40" y="40" width="1840" height="620" fill="none" stroke="#B8935A" stroke-width="1.5"/>
+  <text x="960" y="110" text-anchor="middle" fill="#B8935A" font-family="Georgia, 'Times New Roman', serif" font-size="22" letter-spacing="8">LUXORA</text>
+  
+  <text x="960" y="622" text-anchor="middle" fill="#B8935A" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="3"></text>
+</svg>

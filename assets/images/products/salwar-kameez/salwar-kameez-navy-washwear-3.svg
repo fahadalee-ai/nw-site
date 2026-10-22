@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Wash &amp; Wear 2-Piece — Navy">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E4EFE4"/>
+      <stop offset="100%" stop-color="#8EA48A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#g)"/>
+  <circle cx="936" cy="420" r="216" fill="#1B2740" opacity="0.45"/>
+  <circle cx="264" cy="1080" r="120" fill="none" stroke="#B8935A" stroke-width="2"/>
+  <rect x="40" y="40" width="1120" height="1420" fill="none" stroke="#B8935A" stroke-width="1.5"/>
+  <text x="600" y="110" text-anchor="middle" fill="#B8935A" font-family="Georgia, 'Times New Roman', serif" font-size="22" letter-spacing="8">LUXORA</text>
+  <text x="600" y="690" text-anchor="middle" fill="#0E0E10" font-family="Georgia, 'Times New Roman', serif" font-size="42"><tspan x="600" dy="0">Wash &amp; Wear</tspan><tspan x="600" dy="56">2-Piece — Navy</tspan></text>
+  <text x="600" y="1422" text-anchor="middle" fill="#B8935A" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="3">2-Piece · view 3</text>
+</svg>
