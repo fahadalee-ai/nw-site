@@ -26,8 +26,14 @@
   .lx-newsletter-banner { padding: 2.2rem 2rem; display: grid; grid-template-columns: 1.2fr 1fr; gap: 1rem; align-items: center; }
   .lx-values { grid-template-columns: 1fr 1fr; }
   .lx-cart-row { grid-template-columns: 110px 1fr auto; align-items: center; }
+  .lx-feature { grid-template-columns: minmax(220px, 420px) minmax(0, 1fr); }
+  .lx-feature img { height: auto; min-height: 0; max-height: none; }
+  .lx-feature-copy { padding: 0.4rem 0 0.4rem 0.2rem; }
   .lx-split { grid-template-columns: 1.05fr 0.95fr; gap: 2rem; }
-  .lx-footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 1.5rem; }
+  .lx-footer-top { grid-template-columns: 1.15fr 0.85fr; align-items: end; }
+  .lx-footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; }
+  .lx-footer .lx-news-form { max-width: 28rem; }
+  .lx-footer-grid { grid-template-columns: 1fr 1fr; }
   .qv-grid { grid-template-columns: 0.9fr 1.1fr; }
   .lx-hero-copy { padding-bottom: 6rem; }
 }
@@ -73,7 +79,7 @@
   .lx-card:focus-within .lx-card-actions .lx-quick,
   .lx-card:hover .lx-card-actions .lx-icon-btn,
   .lx-card:focus-within .lx-card-actions .lx-icon-btn { opacity: 1; }
-  .lx-footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1.2fr; }
+  .lx-footer-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .lx-look img { height: 640px; }
 }
 
