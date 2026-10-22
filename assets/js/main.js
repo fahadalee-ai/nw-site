@@ -702,7 +702,6 @@
     var register = document.getElementById("registerForm");
     if (login) login.addEventListener("submit", function (event) {
       event.preventDefault();
-      if (!login.checkValidity()) { login.classList.add("was-validated"); return; }
       var user = users().find(function (item) {
         return item.email.toLowerCase() === login.email.value.trim().toLowerCase() && item.password === login.password.value;
       });
@@ -713,19 +712,16 @@
     });
     if (register) register.addEventListener("submit", function (event) {
       event.preventDefault();
-      var phone = register.phone.value.replace(/\D/g, "");
-      if (phone.indexOf("92") === 0) phone = "0" + phone.slice(2);
-      register.phone.setCustomValidity(/^03\d{9}$/.test(phone) ? "" : "Use a 03XX mobile number.");
-      if (!register.checkValidity()) { register.classList.add("was-validated"); return; }
       var list = users();
-      if (list.some(function (item) { return item.email.toLowerCase() === register.email.value.trim().toLowerCase(); })) {
+      var email = register.email.value.trim();
+      if (email && list.some(function (item) { return item.email.toLowerCase() === email.toLowerCase(); })) {
         toast("That email already has a demo profile here.", "error");
         return;
       }
       var user = {
         name: register.name.value.trim(),
-        email: register.email.value.trim(),
-        phone: phone.slice(0, 4) + "-" + phone.slice(4),
+        email: email,
+        phone: register.phone.value.trim(),
         password: register.password.value,
         addresses: []
       };
